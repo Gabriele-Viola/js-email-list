@@ -18,18 +18,18 @@
         <h1 class="title">Generatore di E-Mail</h1>
     </header>
     <main>
-        <div class="container">
+        <div class="container py-5">
             <div class="mb-3">
                 <form action="">
-                    <div class="row row-cols-2">
+                    <div class="row row-cols-2 justify-content-evenly">
                         
-                        <div class="w-25">
-                            <label for="amount" class="form-label">Amount e-mails</label>
+                        <div class="w-50">
+                            <label for="amount" class="form-label">Amount e-mail</label>
                             <input type="number" class="form-control" name="amount" id="amount" aria-describedby="helpId"
                                 placeholder="" max="20" />
-                            <small id="helpId" class="form-text text-muted">How many mails you wanna generate?</small>
+                            <small id="helpId" class="form-text text-muted">How many mail you wanna generate?</small>
                         </div>
-                        <div class="w-25">
+                        <div class="w-25 d-flex align-items-center">
                             <button type="submit" class="btn btn-primary">
                                 Submit
                             </button>
@@ -38,9 +38,9 @@
     
                 </form>
             </div>
-
-            <div class="list">
+            <div class="list row row-cols-3">
                 <!-- show here generate e-mails -->
+
             </div>
         </div>
     </main>

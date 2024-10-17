@@ -15,6 +15,7 @@ maniMails = amountEl.value
 console.log(maniMails);
 const listEl = document.querySelector('.list')
 console.log(listEl);
+const pEl = document.querySelector('p')
 
 
 
@@ -30,12 +31,19 @@ formEl.addEventListener('submit', function (e) {
     .then(respo =>{
         let result = respo.data;
         console.log(result.response);
-        const email = document.createElement('p')
-        email.innerText = result.response
-        listEl.appendChild(email)
+        // const email = document.createElement('p')
+        // email.innerText = result.response
+        // listEl.appendChild(email)
+        listEl.innerHTML=
+        `
+                    <div class="col">
+                    <p>${result.response}</p>
+                </div>
+        `
     })
-        
-    }
+    
+}
+
     
 })
 
